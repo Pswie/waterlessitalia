@@ -65,17 +65,15 @@ setInterval(() => {
 */
 
 // Funzione per mostrare/nascondere il menu a tendina su mobile
-function toggleMenu(event) {
-    if (window.innerWidth <= 600) {
-        event.preventDefault(); // Previene il comportamento predefinito del link
-        const dropdown = document.querySelector('.dropdown-menu');
-        if (dropdown.style.display === 'block') {
-            dropdown.style.display = 'none';
-        } else {
-            dropdown.style.display = 'block';
-        }
+function toggleMenu() {
+    const dropdown = document.querySelector('.dropdown-menu');
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+    } else {
+        dropdown.style.display = 'block';
     }
 }
+
 
 // Aggiungi l'evento di click al logo e all'icona hamburger per mostrare/nascondere il menu su mobile
 document.querySelector('.logo').addEventListener('click', toggleMenu);

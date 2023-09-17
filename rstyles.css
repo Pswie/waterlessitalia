@@ -200,3 +200,48 @@ body, html {
 .icon:hover i {
     color: #0077b5; /* Cambia colore al passaggio del mouse, ad esempio in blu LinkedIn */
 }
+
+/* Stili per la versione mobile */
+@media screen and (max-width: 768px){
+
+    /* Stilizzazione del contenitore header */
+    body, html {
+        font-family: 'Montserrat', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Permette lo scorrimento su dispositivi mobili */
+    }
+
+.text-overlay {
+    position: relative;
+    max-width: 90%; /* Ridotta la larghezza per adattarsi meglio ai dispositivi mobili */
+    left: 5%; /* Centrato il contenuto */
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Ridotto il padding */
+    color: white;
+    border-radius: 15px;
+}
+
+.text-overlay h2 {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    font-size: 1.7em; /* Ridotta la dimensione del testo */
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.text-overlay h3 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 1.2em; /* Ridotta la dimensione del testo */
+}
+
+.text-overlay p, .text-overlay ul, .text-overlay li {
+    font-size: 1em; /* Ridotta la dimensione del testo */
+}}
