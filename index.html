@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterless Let's Save It!</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Collegamento al file CSS -->
+    <script src="script.js" defer></script> <!-- Collegamento al file JavaScript con l'attributo "defer" -->
+</head>
+<body>
+    <!-- Contenitore principale del sito -->
+    <div class="container">
+        <!-- Intestazione con logo e icona hamburger -->
+        <div class="header">
+            <a href="index.html">
+                <img src="images/Logo Bianco.png" alt="Logo">
+                <span class="logo-text">Waterless</span>
+            </a>
+
+            <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span> <!-- Aggiunto l'evento onclick -->
+            <!-- Menu a tendina -->
+            <div class="dropdown-menu">
+                <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
+                <a href="Lavora.html">LAVORA CON NOI</a>
+                <a href="https://waterlessitalia.prenotime.it/cp3" class="menu-item">FAQ</a>
+                <a href="Contatti.html">CONTATTI</a>
+            </div>
+        </div>
+        <!-- Menu in alto a destra per la versione desktop -->
+        <div class="menu">
+            <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
+            <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
+            <a href="https://waterlessitalia.prenotime.it/cp3" class="menu-item">FAQ</a>
+            <a href="Contatti.html" class="menu-item">CONTATTI</a>
+        </div>
+        <!-- Carosello di immagini -->
+        <div class="carousel">
+    <!-- Prima slide con immagine e testo sovrapposto -->
+    <div class="slide" style="background-image: url('images/Principale.png');">
+        <div class="text-overlay">
+            <h2>Waterless Italia<br><span>Let's Save It!</span></h2>
+            <p>L'azienda che ha deciso di fare la differenza. Ogni volta che scegli di lavare la tua autovettura con noi, risparmi 150 litri d'acqua. 
+                Scegliere Waterless Italia significa avere la libertà di lavare la tua vettura dove e quando preferisci... 
+                Abbiamo fatto una scelta consapevole e vogliamo che tu faccia lo stesso...</p>
+            <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
+        </div>
+    </div>
+    
+    <!-- Seconda slide con immagine e testo sovrapposto -->
+    <div class="slide" style="background-image: url('images/Principale.png');">
+        <div class="text-overlay">
+            <h3>Come è possibile?</h3><br>
+            <p1>Laviamo la tua auto senza utilizzare una goccia d'acqua. Sì, hai capito bene: <strong>WATERLESS!</strong></p1>
+            </p>Utilizziamo solo prodotti di altissima qualità ed ecosostenibili affidandoci all' azienda leader nel settore dal 1965.</p><br><br>
+            <h3>Cosa Offriamo?</h3>
+            <ul>
+                <li>Spreco D'Acqua? <strong>NO</strong></li>
+                <li>Residui Sul Suolo? <strong>NO</strong></li>
+                <li>Lavaggio A Mano? <strong>SÌ</strong></li>
+                <li>Operatori Specializzati? <strong>SÌ</strong></li>
+            </ul>
+        </p>E tu cosa stai aspettando?</p>
+        <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
+        </div>
+</div>
+
+    <!-- Terza slide solo con immagine -->
+    <div class="slide" style="background-image: url('images/Principale.png');"> 
+        <div class="text-overlay">
+            <h3>Dove puoi trovarci?</h3><br>
+        <p>La nostra operatività copre attualmente i seguenti comuni in Campania:</p>
+        <ul>
+            <li>80045- Pompei (NA) - Italia</li>
+            <li>80053 - Castellammare di Stabia (NA) - Italia</li>
+            <li>80050 - Santa Maria la Carità (NA) - Italia</li>
+            <li>80054 - Gragnano (NA) - Italia</li>
+            <li>80057 - Sant'Antonio Abate (NA) - Italia</li>
+            <li>84018 - Scafati (SA) - Italia</li>
+        </ul>
+        <p>Stiamo lavorando per estendere il servizio quanto prima.</p>
+        <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
+    </div>    </div>
+
+
+    <!-- Quarta slide solo con immagine -->
+    <div class="slide" style="background-image: url('images/Principale.png');"></div>
+
+    <!-- Quinta slide solo con immagine -->
+    <div class="slide" style="background-image: url('images/Principale.png');"></div>
+</div>
+    <!-- Frecce per scorrere le slide -->
+    <button class="carousel-arrow carousel-arrow-left">&lt;</button>
+    <button class="carousel-arrow carousel-arrow-right">&gt;</button>
+</div>
+
+
+
+        <!-- Selettore di immagini con pallini e sbarretta -->
+        <div class="image-selector">
+            <div class="slider-track">
+                <!-- Ogni bottone rappresenta un pallino del selettore -->
+                <button class="selector-button" data-slide="0"></button>
+                <button class="selector-button" data-slide="1"></button>
+                <button class="selector-button" data-slide="2"></button>
+                <button class="selector-button" data-slide="3"></button>
+                <button class="selector-button" data-slide="4"></button>
+                <!-- Sbarretta sotto il pallino selezionato -->
+                <div class="slider-indicator"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Script per gestire l'apertura e la chiusura del menu a tendina -->
+    <script>
+        function toggleMenu() {
+            const dropdown = document.querySelector('.dropdown-menu');
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+            } else {
+                dropdown.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
