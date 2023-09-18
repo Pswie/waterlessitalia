@@ -51,6 +51,28 @@ buttons.forEach(button => {
     });
 });
 
+let startX = 0; // Posizione iniziale del tocco
+let endX = 0; // Posizione finale del tocco
+
+carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+carousel.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    if (startX - endX > 50) { // Swipe verso sinistra
+        currentSlide = (currentSlide + 1) % slides.length;
+    } else if (endX - startX > 50) { // Swipe verso destra
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    }
+    updateSlide();
+}
+
+
 // Aggiorna la posizione iniziale dell'indicatore
 updateSlide();
 
