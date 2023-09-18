@@ -1,0 +1,234 @@
+
+
+/* Stili per la versione mobile */
+@media screen and (max-width: 768px){
+/* Main menu positionning */
+.main-nav {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100vh; 
+    text-align: left; 
+    background: #DAECEF;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+    overflow-y: auto; 
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+  .main-nav.is-open {
+    opacity: 1;
+    overflow: hidden;
+    z-index: 100;
+    visibility: visible;
+  }
+  
+  /* Yellow band effect */
+  .main-nav::before {
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: #015486   ;
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+  }
+  
+  .main-nav.is-open::before {
+    transform: skew(-14deg) translateX(0);
+  }
+  
+  /* Skewing effect on menu links */
+  .main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%; /* Should be 100%, but we have a notice message :D */
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+  }
+  
+  .main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg);
+  }
+  
+  /* Apparition effect on links */
+  .main-nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .main-nav.is-open a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .main-nav li:nth-child(1) a {
+  transition: all 275ms 175ms
+  }
+  .main-nav li:nth-child(2) a {
+  transition: all 275ms 225ms
+  }
+  .main-nav li:nth-child(3) a {
+  transition: all 275ms 275ms
+  }
+  .main-nav li:nth-child(4) a {
+  transition: all 275ms 325ms
+  }
+  .main-nav li:nth-child(5) a {
+  transition: all 275ms 375ms
+  }
+  
+  
+  /* Decoration */
+/* Skewing effect on menu links */
+.main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%; /* Cambiato da 93% a 100% */
+    align-items: flex-start; /* Cambiato da flex-end a flex-start */
+    justify-content: flex-start; /* Cambiato da center a flex-start */
+    transform: skew(0deg); /* Rimosso l'effetto di inclinazione */
+    padding: 20px; /* Aggiunto padding per spaziare gli elementi */
+}
+
+.main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: left; /* Allineamento a sinistra */
+    transform: skew(0deg); /* Rimosso l'effetto di inclinazione */
+}
+  .main-nav a {
+  display: block;
+  padding: 12px 0;
+  color: #DAECEF  ;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  
+ /* Burger Style */
+.open-main-nav {
+    position: fixed; /* Cambiato da absolute a fixed */
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+  .open-main-nav:focus {
+  outline: none;
+  }
+  .burger {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 0 auto;
+  background: #DAECEF;
+  transform: skew(5deg);
+  transition: all .275s;
+  }
+  
+  .burger:after,
+  .burger:before {
+  content: '';
+  display: block;
+  height: 100%;
+  background: #6A9AB7;
+  transition: all .275s;
+  }
+  
+  .burger:after {
+  transform: translateY(-12px) translateX(-2px) skew(-20deg);
+  }
+  
+  .burger:before {
+  transform: translateY(-16px) skew(-10deg);
+  }
+  
+  /* Toggle State part */
+  .is-open .burger {
+  transform: skew(5deg) translateY(-8px) rotate(-45deg);
+  }
+  
+  .is-open .burger:before {
+  transform: translateY(0px) skew(-10deg) rotate(75deg);
+  }
+  
+  .is-open .burger:after {
+  transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0;
+  }
+  
+  /* MENU Text part */
+  
+  .burger-text {
+  display: block;
+  font-size: .675rem;
+  letter-spacing: .05em;
+  margin-top: .5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: #6A9AB7;
+
+  
+  }
+
+
+  .open-main-nav, .main-nav {
+    display: block;
+}
+    /* ... (il resto del tuo codice CSS per la versione mobile) ... */
+
+    .header {
+        position: static;
+        top: 0px;
+        left: -10px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Allinea i contenuti a sinistra */
+        background-color: transparent;
+        padding: 10px;
+        transform: none; /* Rimuovi la trasformazione */
+    }
+    
+    .header a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s;
+    }
+    
+    .header img {
+        width: 72px; /* Ridotto del 40% da 120px */
+    }
+    
+    .logo-text {
+        font-size: 24px; /* Ridotto del 40% da 40px */
+    }
+    .open-main-nav {
+        display: block; /* Mostra il pulsante del menu hamburger nella versione mobile */
+        position: absolute; /* Posiziona il menu hamburger a destra */
+        top: 45px;
+        right: 5px;
+    }
+
+    .menu {
+        display: none; /* Nascondi il menu nella versione mobile */
+    }}

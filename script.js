@@ -64,21 +64,6 @@ setInterval(() => {
 }, 7000); // Cambia immagine ogni 7 secondi
 */
 
-// Funzione per mostrare/nascondere il menu a tendina su mobile
-function toggleMenu() {
-    const dropdown = document.querySelector('.dropdown-menu');
-    if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
-    } else {
-        dropdown.style.display = 'block';
-    }
-}
-
-
-// Aggiungi l'evento di click al logo e all'icona hamburger per mostrare/nascondere il menu su mobile
-document.querySelector('.logo').addEventListener('click', toggleMenu);
-document.querySelector('.hamburger-icon').addEventListener('click', toggleMenu);
-
 
 // Transizioni
 document.querySelectorAll('a').forEach(link => {
@@ -90,3 +75,24 @@ document.querySelectorAll('a').forEach(link => {
         }, 500);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let burger = document.getElementById('burger');
+    let nav = document.getElementById('main-nav');
+
+    burger.addEventListener('click', toggleMenu);
+});
+
+function toggleMenu() {
+    let burger = document.getElementById('burger');
+    let nav = document.getElementById('main-nav');
+    
+    burger.classList.toggle('is-open');
+    nav.classList.toggle('is-open');
+
+    if (nav.classList.contains("is-open")) {
+        document.body.classList.add('no-scroll'); // Aggiungi la classe no-scroll
+    } else {
+        document.body.classList.remove('no-scroll'); // Rimuovi la classe no-scroll
+    }
+}

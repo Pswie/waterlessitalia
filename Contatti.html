@@ -6,34 +6,47 @@
     <title>Contatti</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="rstyles.css">
+    <link rel="stylesheet" href="menu.css">
     <script src="script.js" defer></script> <!-- Script per la gestione del menu -->
 </head>
 <body>
-    <!-- Contenitore principale del sito -->
-    <div class="container">
-        <!-- Intestazione con logo e icona hamburger -->
-        <div class="header">
-            <a href="index.html">
-                <img src="images/Logo.png" alt="Logo">
-                <span class="logo-text">Waterless</span>
-            </a>
+<!-- Contenitore principale del sito -->
+<div class="container">
+  <!-- Intestazione con logo e icona hamburger -->
+  <div class="header">
+      <a href="index.html">
+          <img src="images/Logo.png" alt="Logo">
+          <span class="logo-text">Waterless</span>
+      </a>
+      
+      <!-- Pulsante del menu -->
+      <button id="burger" class="open-main-nav" onclick="toggleMenu()">
+          <span class="burger"></span>
+          <span class="burger-text">Menu</span>
+      </button>
+      
+      <!-- Menu a tendina -->
+      <nav class="main-nav" id="main-nav">
+          <ul>
+            <a href="https://waterlessitalia.prenotime.it/prenota" >PRENOTA ORA</a>
+            <a href="Lavora.html">LAVORA CON NOI</a>
+            <a href="Faq.html">FAQ</a>
+            <a href="Contatti.html">CONTATTI</a>
+            <a href="Partner.html">PARTNER</a>
+          </ul>
+      </nav>
+  </div>
+</div>
 
-            <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span> <!-- Aggiunto l'evento onclick -->
-            <!-- Menu a tendina -->
-            <div class="dropdown-menu">
-                <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
-                <a href="Lavora.html">LAVORA CON NOI</a>
-                <a href="https://waterlessitalia.prenotime.it/cp3" class="menu-item">FAQ</a>
-                <a href="Contatti.html">CONTATTI</a>
-            </div>
-        </div>
-        <!-- Menu in alto a destra per la versione desktop -->
-        <div class="menu">
-            <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
-            <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
-            <a href="https://waterlessitalia.prenotime.it/cp3" class="menu-item">FAQ</a>
-            <a href="Contatti.html" class="menu-item">CONTATTI</a>
-        </div>
+<!-- Menu in alto a destra per la versione desktop -->
+<div class="menu">
+  <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
+  <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
+  <a href="Faq.html" class="menu-item">FAQ</a>
+  <a href="Contatti.html" class="menu-item">CONTATTI</a>
+  <a href="Partner.html" class="menu-item">PARTNER</a>
+</div>
+
 
             <div class="text-overlay">
                 <br><br><br><br>

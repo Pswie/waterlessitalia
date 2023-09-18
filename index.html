@@ -16,26 +16,32 @@
                 <img src="images/Logo Bianco.png" alt="Logo">
                 <span class="logo-text">Waterless</span>
             </a>
-
-
-            <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span> <!-- Aggiunto l'evento onclick -->
-
-
-            <!-- Menu a tendina -->
-            <div class="dropdown-menu">
-                <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
-                <a href="Lavora.html">LAVORA CON NOI</a>
-                <a href="https://waterlessitalia.prenotime.it/cp3" class="menu-item">FAQ</a>
-                <a href="Contatti.html">CONTATTI</a>
-            </div>
-        </div>
+      <!-- Pulsante del menu -->
+      <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    
+    <!-- Menu a tendina -->
+    <nav class="main-nav" id="main-nav">
+        <ul>
+          <a href="https://waterlessitalia.prenotime.it/prenota" >PRENOTA ORA</a>
+          <a href="Lavora.html">LAVORA CON NOI</a>
+          <a href="Faq.html">FAQ</a>
+          <a href="Contatti.html">CONTATTI</a>
+          <a href="Partner.html">PARTNER</a>
+        </ul>
+    </nav>
+</div>
         <!-- Menu in alto a destra per la versione desktop -->
         <div class="menu">
             <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
             <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
             <a href="https://waterlessitalia.prenotime.it/cp3" class="menu-item">FAQ</a>
             <a href="Contatti.html" class="menu-item">CONTATTI</a>
+            <a href="Partner.html" class="menu-item">PARTNER</a>
         </div>
+
         <!-- Carosello di immagini -->
         <div class="carousel">
     <!-- Prima slide con immagine e testo sovrapposto -->
@@ -84,12 +90,6 @@
         <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
     </div>    </div>
 
-
-    <!-- Quarta slide solo con immagine -->
-    <div class="slide" style="background-image: url('images/Principale.png');"></div>
-
-    <!-- Quinta slide solo con immagine -->
-    <div class="slide" style="background-image: url('images/Principale.png');"></div>
 </div>
     <!-- Frecce per scorrere le slide -->
     <button class="carousel-arrow carousel-arrow-left">&lt;</button>
@@ -105,24 +105,11 @@
                 <button class="selector-button" data-slide="0"></button>
                 <button class="selector-button" data-slide="1"></button>
                 <button class="selector-button" data-slide="2"></button>
-                <button class="selector-button" data-slide="3"></button>
-                <button class="selector-button" data-slide="4"></button>
                 <!-- Sbarretta sotto il pallino selezionato -->
                 <div class="slider-indicator"></div>
             </div>
         </div>
     </div>
-    <!-- Script per gestire l'apertura e la chiusura del menu a tendina -->
-    <script>
-        function toggleMenu() {
-            const dropdown = document.querySelector('.dropdown-menu');
-            if (dropdown.style.display === 'block') {
-                dropdown.style.display = 'none';
-            } else {
-                dropdown.style.display = 'block';
-            }
-        }
-    </script>
 </body>
 </html>
 
