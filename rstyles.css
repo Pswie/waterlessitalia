@@ -14,6 +14,7 @@ body, html {
     background-repeat: repeat;
     background-size: cover; /* Questo farà in modo che l'immagine copra l'intera viewport */
     background-position: center center; /* Questo posizionerà l'immagine al centro */
+    overflow-x: hidden; 
 }
 
 /* Contenitore principale */
@@ -24,17 +25,20 @@ body, html {
 
 /* Stilizzazione del contenitore header */
 .header {
-    position: fixed;
-    top: 0px;
-    left: 15%;
-    transform: translateX(-50%);
+    position: static;
+    top: 10px;
     z-index: 1000;
     display: flex;
-    align-items: center;
+    flex-direction: row; /* Specifica la direzione degli elementi flex */
+    align-items: center; /* Centra verticalmente gli elementi */
+    justify-content: space-between;
     background-color: transparent;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .header a {
+    flex-shrink: 0; /* Impedisce al logo e al menu di ridursi */
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -69,15 +73,14 @@ body, html {
 
 /* Stili per il menu in alto a destra */
 .menu {
-    position: fixed;
-    top: 57px;
-    right: 60px;
-    display: flex;
-    z-index: 1000;
-    margin-right: 60px;
-    font-size: 23PX;
-    font-weight:bold;
+    flex-shrink: 0; /* Impedisce al logo e al menu di ridursi */
+        position: relative;
+        display: flex;
+        z-index: 1000;
+        font-size: 23PX;
+        font-weight:bold;
 }
+
 .menu-item {
     text-decoration: none;
     color: #015486;
@@ -96,7 +99,7 @@ body, html {
     position: relative;
     max-width: 800px;
     left: 130px;
-    top: 110px;
+    top: -20px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -180,7 +183,7 @@ body, html {
 .wrapper {
     max-width: 75%;
     margin: auto;
-    margin-top: 140px;
+    margin-top: 30px;
     }
   
   .wrapper > p,
@@ -238,6 +241,37 @@ body, html {
     border: none;
   }
   
+  /* Scrollbar */
+  .scrollbar {
+    height: 100%; /* Fai in modo che la barra di scorrimento occupi l'intera altezza */
+    overflow-x: hidden; /* Nessuna scorribilità orizzontale */
+    overflow-y: auto; /* Mostra la barra di scorrimento solo quando necessario */
+    width: 100%; /* Fai in modo che la barra di scorrimento occupi l'intera larghezza */
+    background: #F5F5F5;
+  }
+  
+  .force-overflow {
+    min-height: 101%; /* Forza la barra di scorrimento a comparire */
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #DAECEF;
+  }
+
+
 /* Transizioni in */
 @keyframes fadeIn {
     from {
@@ -277,6 +311,13 @@ body.fade-out {
         width: 100%;
         height: 100%;
     }
+        body::-webkit-scrollbar {
+            display: none; /* per Chrome e Safari */
+        }
+        body {
+            -ms-overflow-style: none;  /* per Internet Explorer e Edge */
+            scrollbar-width: none; /* per Firefox */
+        }
 
     .text-overlay {
         position: relative;
