@@ -117,4 +117,4 @@ function toggleMenu() {
     } else {
         document.body.classList.remove('no-scroll'); // Rimuovi la classe no-scroll
     }
-}
+};

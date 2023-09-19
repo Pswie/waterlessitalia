@@ -1,3 +1,16 @@
+footer {
+  background-color: #DAECEF;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.space {
+  height: 2000px; /* Altezza dello spazio in pixel (personalizzabile) */
+}
 
 
 /* Stili per la versione mobile */
@@ -232,3 +245,7 @@
     .menu {
         display: none; /* Nascondi il menu nella versione mobile */
     }}
+
+    .space {
+      height: 80px; /* Altezza dello spazio in pixel (personalizzabile) */
+    }

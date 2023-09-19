@@ -157,26 +157,95 @@ body, html {
     margin-bottom: 5px;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+
+/* Stili per tutte le dimensioni dello schermo (incluso mobile) */
+/* Stili per il testo nella versione desktop */
+.text-overlay-desktop {
+  position: relative;
+  max-width: 800px;
+  left: 130px;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #015486;
+  border-radius: 15px;
 }
 
-.icon {
-    margin: 0 10px; /* Aggiunge spazio tra le icone */
-    text-decoration: none; /* Rimuove sottolineature dai link */
-    color: inherit; /* Utilizza il colore ereditato anziché un colore specifico per il link */
+.text-overlay-desktop h2 {
+  margin-bottom: 8px;
+  margin-top: 2px;
+  font-size: 3.5em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.icon i {
-    font-size: 24px; /* Dimensione media delle icone */
-    transition: color 0.3s; /* Effetto di transizione al passaggio del mouse */
+.text-overlay-desktop h2 span {
+  font-size: 1.5em;
 }
 
-.icon:hover i {
-    color: #0077b5; /* Cambia colore al passaggio del mouse, ad esempio in blu LinkedIn */
+.text-overlay-desktop h3 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 1.5em;
 }
+
+.text-overlay-desktop p {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #001B57;
+  margin-top: 5px;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-overlay-desktop a {
+  color: #111;
+}
+
+.text-overlay-desktop .intro {
+  margin-bottom: 5px;
+}
+
+.text-overlay-desktop ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+.text-overlay-desktop li {
+  margin-bottom: 5px;
+}
+
+/* Stili per le icone dei social media nella versione desktop */
+.social-icons-desktop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-desktop {
+  margin: 0 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-desktop i {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.icon-desktop:hover i {
+  color: #0077b5;
+}
+
+/* Nascondi la sezione di contatto nella versione desktop */
+.mobile-contact-section {
+  display: none; /* Nascondi la sezione di contatto per impostazione predefinita */
+}
+
 
 
 /* FAQ */
@@ -184,6 +253,7 @@ body, html {
     max-width: 75%;
     margin: auto;
     margin-top: 30px;
+      padding-bottom: 50px; /* Altezza dello spazio tra il wrapper e il footer (personalizzabile) */
     }
   
   .wrapper > p,
@@ -197,7 +267,7 @@ body, html {
   }
   
   .accordion {
-    background-color: white;
+    background-color: transparent;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     font-size: 1.2rem;
@@ -210,6 +280,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    backdrop-filter: blur(10px); /* Aggiungi sfocatura */
   }
   
   .accordion i {
@@ -218,7 +289,7 @@ body, html {
   
   .active,
   .accordion:hover {
-    background-color: #f1f7f5;
+    background-color: transparent;
   }
   .pannel {
     padding: 0 2rem 2.5rem 2rem;
@@ -389,7 +460,7 @@ body.fade-out {
   }
   
   .accordion {
-    background-color: white;
+    background-color: transparent; /* Sfondo trasparente */
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     font-size: 1.2rem;
@@ -402,6 +473,7 @@ body.fade-out {
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    backdrop-filter: blur(10px); /* Aggiungi sfocatura */
   }
   
   .accordion i {
@@ -414,9 +486,8 @@ body.fade-out {
   }
   .pannel {
     padding: 0 2rem 2.5rem 2rem;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
-    background-color: #f1f7f5;
     display: none;
   }
   .pannel p {
@@ -434,5 +505,42 @@ body.fade-out {
   }
   
 
+  .text-overlay-desktop {
+    display: none;
+  }
+
+
+/* Nascondi le icone desktop */
+.social-icons-desktop {
+  display: none;
 }
+
+.mobile-contact-section {
+  display: block;
+  text-align: center;
+  background-color: transparent; /* Cambia il colore dello sfondo se necessario */
+  padding: 20px;
+}
+
+.mobile-contact-section h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.mobile-contact-section .contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Allinea gli elementi al centro orizzontalmente */
+  text-decoration: none;
+  color: #015486;
+  margin-bottom: 30px; /* Aumenta lo spazio tra le coppie di icona e testo */
+}
+
+.mobile-contact-section .contact-link i {
+  font-size: 36px; /* Aumenta le dimensioni delle icone */
+  margin-bottom: 15px; /* Aumenta lo spazio tra l'icona e il testo */
+}}
+
+
+
 
