@@ -293,9 +293,8 @@ body, html {
   }
   .pannel {
     padding: 0 2rem 2.5rem 2rem;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
-    background-color: #f1f7f5;
     display: none;
   }
   .pannel p {
@@ -482,7 +481,8 @@ body.fade-out {
   
   .active,
   .accordion:hover {
-    background-color: #f1f7f5;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
   }
   .pannel {
     padding: 0 2rem 2.5rem 2rem;
@@ -540,6 +540,8 @@ body.fade-out {
   font-size: 36px; /* Aumenta le dimensioni delle icone */
   margin-bottom: 15px; /* Aumenta lo spazio tra l'icona e il testo */
 }}
+
+
 
 
 

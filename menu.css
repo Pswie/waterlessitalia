@@ -1,11 +1,37 @@
+/* Footer styling */
 footer {
-  background-color: #DAECEF;
+  background-color: transparent;
   padding: 20px;
   text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.left-footer img {
+  width: 100px; /* Imposta la larghezza desiderata per il logo */
+  height: auto; /* Mantieni l'aspetto proporzionato */
+  margin-right: 10px; /* Aggiungi margine a destra per separare il logo dal testo */
+}
+
+.left-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.right-footer {
+  font-size: 14px;
 }
 
 .space {
@@ -246,6 +272,28 @@ footer {
         display: none; /* Nascondi il menu nella versione mobile */
     }}
 
-    .space {
-      height: 80px; /* Altezza dello spazio in pixel (personalizzabile) */
-    }
+/* Spazio tra il menu e il contenuto principale */
+.space {
+  height: 80px; /* Puoi personalizzare l'altezza */
+}
+
+/* Tasti per il download delle app */
+.app-store-button {
+  display: inline-block;
+  text-align: center;
+}
+
+.app-store-button a {
+  display: block;
+  text-decoration: none;
+}
+
+.app-store-button img {
+  width: 208px; /* Imposta la larghezza desiderata per le icone delle app */
+  height: auto; /* Mantieni l'aspetto proporzionato */
+  margin-right: 5px; /* Aggiungi margine a destra per separare l'immagine dal testo */
+}
+
+.space1{
+  height: 40px; /* Puoi personalizzare l'altezza */
+}
