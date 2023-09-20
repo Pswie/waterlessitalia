@@ -15,6 +15,7 @@ body, html {
     background-size: cover; /* Questo farà in modo che l'immagine copra l'intera viewport */
     background-position: center center; /* Questo posizionerà l'immagine al centro */
     overflow-x: hidden; 
+
 }
 
 /* Contenitore principale */
