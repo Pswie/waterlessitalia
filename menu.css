@@ -87,7 +87,7 @@ height: 60px;
 
 
 /* Stili per la versione mobile */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1150px){
 /* Main menu positionning */
 .main-nav {
     position: fixed; 

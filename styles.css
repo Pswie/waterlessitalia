@@ -289,7 +289,7 @@ body.fade-out {
 
 
 /* Stili per la versione mobile */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1150px){
 
     /* Stilizzazione del contenitore header */
     body, html {
