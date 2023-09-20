@@ -8,13 +8,16 @@ footer {
   left: 0;
   right: 0;
   backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
 }
 
 .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #015486;
+}
+
+.left-footer {
   display: flex;
   align-items: center;
 }
@@ -32,10 +35,11 @@ footer {
 
 .right-footer {
   font-size: 14px;
+  margin-right: 10px; /* Aggiungi margine a destra per separare il testo dal bordo destro */
 }
 
-.space {
-  height: 2000px; /* Altezza dello spazio in pixel (personalizzabile) */
+.space2 {
+height: 60px;
 }
 
 
@@ -267,6 +271,19 @@ footer {
         top: 45px;
         right: 5px;
     }
+.space1{
+  height: 40px; /* Puoi personalizzare l'altezza */
+}
+
+.space2 {
+  height: 40px;
+  }
+
+.left-footer img {
+  width: 50px; /* Imposta la larghezza desiderata per il logo */
+  height: auto; /* Mantieni l'aspetto proporzionato */
+  margin-right: 10px; /* Aggiungi margine a destra per separare il logo dal testo */
+}
 
     .menu {
         display: none; /* Nascondi il menu nella versione mobile */
@@ -276,6 +293,7 @@ footer {
 .space {
   height: 80px; /* Puoi personalizzare l'altezza */
 }
+
 
 /* Tasti per il download delle app */
 .app-store-button {
@@ -294,6 +312,4 @@ footer {
   margin-right: 5px; /* Aggiungi margine a destra per separare l'immagine dal testo */
 }
 
-.space1{
-  height: 40px; /* Puoi personalizzare l'altezza */
-}
+
