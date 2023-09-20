@@ -275,6 +275,10 @@ body.fade-out {
     animation: fadeOut 1.5s ease-in-out;
 }
 
+.carousel-arrow1 {
+    display: none;
+}
+
 @keyframes fadeOut {
     from {
         opacity: 0.95; /* Parti da un'opacità leggermente ridotta */
@@ -282,11 +286,6 @@ body.fade-out {
     to {
         opacity: 0;
     }
-}
-
-.carousel-arrow1-left-mobile,
-.carousel-arrow1-right-mobile {
-    display: none; /* Nasconde le frecce nella versione mobile */
 }
 
 
@@ -433,6 +432,7 @@ body.fade-out {
     }
     
     .carousel-arrow1 {
+            display: inline-block; /* Mostra le frecce solo per dispositivi con larghezza schermo fino a 768px */
         font-size: 20px;
         padding: 5px 10px;
         margin: 0 5px;
