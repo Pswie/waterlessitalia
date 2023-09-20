@@ -118,3 +118,13 @@ function toggleMenu() {
         document.body.classList.remove('no-scroll'); // Rimuovi la classe no-scroll
     }
 };
+
+document.querySelector('.carousel-arrow1-left-mobile').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlide();
+});
+
+document.querySelector('.carousel-arrow1-right-mobile').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide();
+});

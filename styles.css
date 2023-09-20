@@ -234,12 +234,9 @@ body, html {
     display: flex;
     align-items: center;
 }
-.slider-track {
-    display: flex;
-    align-items: center;
-    padding: 0 5px;
-    border-radius: 4px; /* Angoli arrotondati */
-}
+
+
+
 .selector-button {
     background: url('images/Logo_menu.png') no-repeat center center;
     background-size: cover; /* Questo farà in modo che l'immagine copra l'intero elemento */
@@ -285,6 +282,11 @@ body.fade-out {
     to {
         opacity: 0;
     }
+}
+
+.carousel-arrow-left-mobile,
+.carousel-arrow-right-mobile {
+    display: none; /* Nasconde le frecce nella versione mobile */
 }
 
 
@@ -418,6 +420,40 @@ body.fade-out {
         height: 30px;
         border: none;
         transition: background 0.3s;
+    }
+
+    .image-selector {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carousel-arrow1 {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 0 5px;
+        background-color: transparent; /* Imposta lo sfondo del pulsante come trasparente */
+        border: none; /* Rimuove il bordo del pulsante */
+        color: white; /* Imposta il colore della freccia come bianco */
+    }
+    
+    
+    .image-selector .carousel-arrow1-left-mobile {
+        order: 1;
+    }
+    
+    .image-selector .slider-track {
+        order: 2;
+        display: flex;
+        align-items: center;
+    }
+    
+    .image-selector .carousel-arrow1-right-mobile {
+        order: 3;
     }
 
     .main-nav {
