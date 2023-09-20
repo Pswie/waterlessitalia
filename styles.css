@@ -284,8 +284,8 @@ body.fade-out {
     }
 }
 
-.carousel-arrow-left-mobile,
-.carousel-arrow-right-mobile {
+.carousel-arrow1-left-mobile,
+.carousel-arrow1-right-mobile {
     display: none; /* Nasconde le frecce nella versione mobile */
 }
 
