@@ -15,7 +15,6 @@ body, html {
     background-size: cover; /* Questo farà in modo che l'immagine copra l'intera viewport */
     background-position: center center; /* Questo posizionerà l'immagine al centro */
     overflow-x: hidden; 
-
 }
 
 /* Contenitore principale */
@@ -218,6 +217,11 @@ body, html {
 
 .text-overlay-desktop li {
   margin-bottom: 5px;
+}
+
+/* Nascondi le icone desktop */
+.social-icons-mobile {
+  display: none;
 }
 
 /* Stili per le icone dei social media nella versione desktop */
@@ -431,6 +435,28 @@ body.fade-out {
         align-items: center;
     }
     
+/* Stili per le icone dei social media nella versione desktop */
+.social-icons-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-mobile {
+  margin: 0 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-mobile i {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.icon-mobile:hover i {
+  color: #0077b5;
+}
+
     
     .selector-button {
         background: url('images/Logo_menu.png') no-repeat center center;
@@ -516,6 +542,8 @@ body.fade-out {
 .social-icons-desktop {
   display: none;
 }
+
+
 
 .mobile-contact-section {
   display: block;

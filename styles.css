@@ -300,7 +300,8 @@ body.fade-out {
         padding: 0;
         width: 100%;
         height: 100%;
-        overflow: hidden; /* Permette lo scorrimento su dispositivi mobili */
+        overflow:scroll; /* Permette lo scorrimento su dispositivi mobili */
+        overflow-x: hidden;
     }
     
     .container {
@@ -366,6 +367,16 @@ body.fade-out {
         background-size: cover;
         background-position: center;
         position: relative;
+    }
+
+    .carousel .slide {
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center center;
+        overflow-x: hidden;
+        width: 100%; /* o la larghezza desiderata */
+        height: 100vh; /* o l'altezza desiderata */
     }
     
     .text-overlay {
@@ -587,15 +598,15 @@ body.fade-out {
       outline: none;
       }
       .burger {
-      position: relative;
-      display: block;
-      width: 28px;
-      height: 4px;
-      margin: 0 auto;
-      background: #DAECEF;
-      transform: skew(5deg);
-      transition: all .275s;
-      }
+        position: relative;
+        display: block;
+        width: 28px;
+        height: 4px;
+        margin: 0 auto;
+        background: #DAECEF;
+        transform: skew(5deg);
+        transition: all .275s;
+        }
       
       .burger:after,
       .burger:before {
