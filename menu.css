@@ -57,7 +57,7 @@ footer {
 .item {
   width: calc(20% - 20px);
   margin: 10px;
-  background-color: #fff;
+  background-color: #6A9AB7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
