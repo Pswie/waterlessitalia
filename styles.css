@@ -11,7 +11,6 @@ body, html {
     height: 100%;
     background-attachment: fixed;
     background-repeat: repeat;
-    overflow: hidden;
 }
 
 /* Contenitore principale */
@@ -686,4 +685,7 @@ body.fade-out {
     height: auto; /* Mantieni l'aspetto proporzionato */
     margin-right: 5px; /* Aggiungi margine a destra per separare l'immagine dal testo */
   }}
+  
+
+
   
