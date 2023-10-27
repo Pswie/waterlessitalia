@@ -780,6 +780,15 @@ footer {
 
 /* Stili per la versione mobile */
 @media screen and (max-width: 1270px){
+    body {
+        background-image: url('images/fondo\ con\ colori\ pantone_page-0010.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Poppins", sans-serif;
+      }
+
+
   /* Main menu positionning */
   .main-nav {
       position: fixed; 
