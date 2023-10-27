@@ -1059,7 +1059,7 @@ footer {
   .nav__logo {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--white);
+    color: #015486;
   }
   .nav__logo {
     display: flex;
