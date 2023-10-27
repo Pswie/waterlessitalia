@@ -99,7 +99,7 @@ body, html {
     position: relative;
     max-width: 800px;
     left: 130px;
-    top: -20px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -110,7 +110,7 @@ body, html {
 .text-overlay h2 {
     margin-bottom: 8px;  /* Ridotto ulteriormente il margine inferiore */
     margin-top: 2px;     /* Ridotto ulteriormente il margine superiore */
-    font-size: 3.5em;
+    font-size: 1.5em;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -399,7 +399,7 @@ body.fade-out {
         position: relative;
         max-width: 90%; /* Ridotta la larghezza per adattarsi meglio ai dispositivi mobili */
         left: 5%; /* Centrato il contenuto */
-        top: -30px;
+        top: -20px;
         display: flex;
         flex-direction: column;
         padding: 10px; /* Ridotto il padding */
@@ -410,7 +410,7 @@ body.fade-out {
     .text-overlay h2 {
         margin-bottom: 5px;
         margin-top: 2px;
-        font-size: 1.7em; /* Ridotta la dimensione del testo */
+        font-size: 1.5em; /* Ridotta la dimensione del testo */
         line-height: 1.2em;
         font-weight: 900;
         text-transform: uppercase;
@@ -553,7 +553,8 @@ body.fade-out {
 }
 
 .mobile-contact-section h1 {
-  font-size: 1.5em;
+  color: #015486;
+  font-size: 1.3em;
   margin-bottom: 20px;
 }
 
