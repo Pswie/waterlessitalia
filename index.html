@@ -4,134 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waterless Let's Save It!</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Collegamento al file CSS -->
-    <script src="script.js" defer></script> <!-- Collegamento al file JavaScript con l'attributo "defer" -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="styles1.css">
+    <script src="script.js" defer></script> <!-- Script per la gestione del menu -->
 </head>
 <body>
-    <!-- Contenitore principale del sito -->
-    <div class="container">
-        <!-- Intestazione con logo e icona hamburger -->
-        <div class="header">
-            <a href="index.html">
-                <img src="images/Logo Bianco.png" alt="Logo">
-                <span class="logo-text">Waterless</span>
-            </a>
-      <!-- Pulsante del menu -->
-      <button id="burger" class="open-main-nav">
-        <span class="burger"></span>
-        <span class="burger-text">Menu</span>
-    </button>
-    
-    <!-- Menu a tendina -->
-      <!-- Menu a tendina -->
-      <nav class="main-nav" id="main-nav">
-        <ul>
-          <a href="https://waterlessitalia.prenotime.it/prenota">PRENOTA ORA</a>
-          <a href="Lavora.html">LAVORA CON NOI</a>
-          <a href="Faq.html">FAQ</a>
-          <a href="Contatti.html">CONTATTI</a>
-          <a href="Partner.html">PARTNER</a>
-          <br><br></BR>
-          <a> SCARICA L'APP:</a>
-          <li class="menu-item app-store-button">
-            <a href="https://apps.apple.com/it/app/waterless-italia/id6449192863">
-              <img src="images/apple1.png" alt="App Store">
-            </a>
-          </li>
-          <li class="menu-item app-store-button">
-            <a href="https://play.google.com/store/apps/details?id=it.prenotime.waterlessitalia&pli=1">
-              <img src="images/play1.png" alt="Play Store">
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-
-        <!-- Menu in alto a destra per la versione desktop -->
-        <div class="menu">
+    <header>
+        <nav class="section__container nav__container">
+          <div class="nav__logo">
+            <img src="images/Logo Bianco.png" alt="Waterless Logo" /> Waterless</div>
+          <div class="menu">
             <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
             <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
             <a href="Faq.html" class="menu-item">FAQ</a>
             <a href="Contatti.html" class="menu-item">CONTATTI</a>
             <a href="Partner.html" class="menu-item">PARTNER</a>
-        </div>
+          </div>
+        </nav>
+              <!-- Pulsante del menu -->
+      <button id="burger" class="open-main-nav" onclick="toggleMenu()">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    
+    <!-- Menu a tendina -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <a href="https://waterlessitalia.prenotime.it/prenota">PRENOTA ORA</a>
+        <a href="Lavora.html">LAVORA CON NOI</a>
+        <a href="Faq.html">FAQ</a>
+        <a href="Contatti.html">CONTATTI</a>
+        <a href="Partner.html">PARTNER</a>
+        <br><br></BR>
+        <a> SCARICA L'APP:</a>
+        <li class="menu-item app-store-button">
+          <a href="https://apps.apple.com/it/app/waterless-italia/id6449192863">
+            <img src="images/apple1.png" alt="App Store">
+          </a>
+        </li>
+        <li class="menu-item app-store-button">
+          <a href="https://play.google.com/store/apps/details?id=it.prenotime.waterlessitalia&pli=1">
+            <img src="images/play1.png" alt="Play Store">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+        <div class="section__container header__container">
+          <div class="header__content">
+           <h1>
+                LAVIAMO la 
+                tua AUTO
+                SENZ'ACQUA  
+                a DOMICILIO oppure 
+                OVUNQUE TU DESIDERI !                
+            </h1>
 
-        <!-- Carosello di immagini -->
-        <div class="carousel">
-    <!-- Prima slide con immagine e testo sovrapposto -->
-    <div class="slide" style="background-image: url('images/Principale.png');">
-        <div class="text-overlay">
-            <h2>Waterless Italia</h2>
-            <p>L'azienda che ha deciso di fare la differenza. Ogni volta che scegli di lavare la tua autovettura con noi, risparmi 150 litri d'acqua. 
-                Scegliere Waterless Italia significa avere la libertà di lavare la tua vettura dove e quando preferisci. </p>
-                <br>
-                <h3>Esatto Anywhere you Want! Cosa aspetti?</h3>
+            <p><i class="ri-leaf-fill"></i> Ecologico</p>
+            <p><i class="ri-hand-heart-fill"></i> A mano</p>
+            <p><i class="ri-timer-flash-fill"></i> Senza sprechi di tempo</p>
+ 
+
             <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
+          </div>
+
+        </div>
+      </header>
+  
+
+
+
+      <section class="section__container service__container">
+        <div class="service__header">
+          <div class="service__header__content">
+            <h2 class="section__header">I nostri servizi</h2>
+            <p>
+                I nostri servizi sono prenotabili on line sul sito o tramite l'app mobile o telefonicamente. 
+                Uno dei nostri operatori sarà sempre a tua disposizione , scegli tu dove e quando avere la tua vettura pulita.
+                
+            </p>
+          </div>
+          <button class="service__btn">Prenota un servizio</button>
+        </div>
+        <div class="service__grid">
+          <div class="service__card">
+            <span><i class="ri-car-washing-fill"></i></span>
+            <h4>COMPLETO</h4>
+            <p>
+                Lavaggio carrozzeria - Lavaggio vetri - Lavaggio cerchi - Pulizia abitacolo - Pulizia bagagliaio. 
+                Servizio a domicilio incluso nel prezzo. In alcune situazioni il Washer può richiedere prima di iniziare il servizio "WaterlessPlus"                
+            </p>
+            <a href="#">Prenota il lavaggio Completo</a>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-roadster-fill"></i></span>
+            <h4>INTERNO</h4>
+            <p>
+                Pulizia abitacolo - Pulizia bagagliaio - Lavaggio vetri. 
+                Servizio a domicilio incluso nel prezzo. In alcune situazioni il Washer può richiedere prima di iniziare il servizio "WaterlessPlus"                
+            </p>
+            <a href="#">Prenota il lavaggio Interno</a>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-roadster-fill"></i></span>
+            <h4>ESTERNO</h4>
+            <p>
+                Lavaggio carrozzeria - Lavaggio vetri - Lavaggio cerchi. 
+                Servizio a domicilio incluso nel prezzo. In alcune condizioni il Washer può richiedere prima di iniziare il servizio "WaterlessPlus"                
+            </p>
+            <a href="#">Prenota il lavaggio Esterno</a>
+          </div>
+        </div>
+  
+      <section class="section__container why__container">
+        <div class="why__image">
+          <img src="assets/choose-us.jpg" alt="why choose us" />
+        </div>
+        <div class="why__content">
+          <h2 class="section__header">Quali sono i vantaggi di scegliere Waterless Italia?</h2>
+          <p>
+            Il nostro non è un semplice lavaggio ma i nostri Washer sono professionisti del settore e si prenderanno cura della tua vettura
+            utilizzando prodotti ecosostenibili che non lasciano residui al suolo.
+          </p>
+          <div class="why__grid">
+            <span><i class="ri-hand-heart-line"></i></span>
+            <div>
+              <h4>Lavaggio a Mano</h4>
+              <p>
+                Il lavaggio a mano è sinonimo di qualità . I nostri prodotti testati per ogni tipo di superfice sono assolutamente sicuri per la tua vettura 
+              </p>
+            </div>
+            <span><i class="ri-leaf-line"></i></span>
+            <div>
+              <h4>Ecologico</h4>
+              <p>
+                I nostri prodotti sono ecosostenibili in quanto possono essere dispersi nell'ambiente senza lasciare residui al suolo 
+              </p>
+            </div>
+            <span><i class="ri-blur-off-line"></i></span>
+            <div>
+              <h4>Senza Acqua</h4>
+              <p>
+                Risparmiamo per ogni lavaggio fino a 150 litri d'acqua il nostro slogan Let's save It! è un imperativo Salviamo l'acqua! 
+              </p>
+            </div>
+            <span><i class="ri-home-line"></i></span>
+            <div>
+              <h4>Ovunque tu voglia !
+                Anywhere you want !
+                </h4>
+              <p>
+                Non dovrai venire da noi. Saremo noi a venire da te non solo a casa anche in ufficio ,al centro commerciale o dovunque tu voglia.
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+  
+    </section>
+    <section class="section__container about__container">
+      <div class="about__content">
+        <h2 class="section__header">Mission</h2>
+        <p>
+            In Waterless Italia, la nostra missione è rivoluzionare l'industria del lavaggio auto,
+             mettendo al primo posto l'ambiente e la soddisfazione dei clienti.
+              Siamo impegnati a offrire un servizio di lavaggio auto a domicilio che sia ecologico, 
+              conveniente e altamente efficace. La nostra missione è ridurre al minimo l'impatto ambientale
+               e risparmiare preziose risorse idriche. Ogni lavaggio auto con Waterless Italia rappresenta
+                un passo verso un futuro più sostenibile.
+        </p>
+        <h2 class="section__header">Vision</h2>
+        <p>
+            La nostra visione è quella di diventare leader nell'industria del lavaggio auto ecologico in Italia.
+             Vogliamo essere riconosciuti come i pionieri di un cambiamento positivo, offrendo ai nostri clienti
+              un servizio senza acqua che sia accessibile ovunque e che rispecchi i più alti standard di qualità
+               e sostenibilità.Con Waterless Italia, vediamo un mondo in cui il lavaggio auto non solo è conveniente,
+                ma anche un atto di responsabilità ecologica.La nostra visione è quella di risparmiare 150 litri d'acqua
+                 per ogni lavaggio auto e di utilizzare solo prodotti ecosostenibili, contribuendo a preservare il nostro
+                  pianeta per le generazioni future.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="about" />
+      </div>
+    </section>
+
+
+  <footer>
+    <!-- Contenuto del tuo footer -->
+    <div class="footer-content">
+        <!-- Parte sinistra del footer -->
+        <div class="left-footer">
+            <!-- Includi qui il logo di Waterless Italia -->
+            <img src="images/Logo.png" alt="Waterless Italia Logo">
+            <p>&copy; Waterless Italia, Partita IVA: 09991351215</p>
+        </div>
+        <!-- Parte destra del footer -->
+        <div class="right-footer">
+          Powered by Pasquale Langellotti
         </div>
     </div>
-    
-    <!-- Seconda slide con immagine e testo sovrapposto -->
-    <div class="slide" style="background-image: url('images/Principale.png');">
-        <div class="text-overlay">
-            <h3>Come è possibile?</h3>
-            <p>Laviamo la tua auto senza utilizzare acqua. Sì, hai capito bene: <strong>WATERLESS! Let's Save It!</strong></p>
-            <p>Utilizziamo solo prodotti di altissima qualità ed ecosostenibili affidandoci all'azienda leader nel settore dal 1965.</p><br>
-            <h3>Cosa Offriamo?</h3>
-            <ul>
-                <li>Spreco D'Acqua? <strong>NO</strong></li>
-                <li>Residui Sul Suolo? <strong>NO</strong></li>
-                <li>Lavaggio A Mano? <strong>SÌ</strong></li>
-                <li>Operatori Specializzati? <strong>SÌ</strong></li>
-            </ul>
-        <p>Abbiamo fatto una scelta consapevole e vogliamo che tu faccia lo stesso!<p>
-        <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
-        <br><br><br><br><br>
-        </div>
-</div>
-
-    <!-- Terza slide solo con immagine -->
-    <div class="slide" style="background-image: url('images/Principale.png');"> 
-        <div class="text-overlay">
-            <h3>Dove puoi trovarci?</h3><br>
-        <p>La nostra operatività copre attualmente i seguenti comuni in Campania:</p>
-    <ul>
-        <li>80053 - Castellammare di Stabia (NA) - Italia</li>
-        <li>80054 - Gragnano (NA) - Italia</li>
-        <li>80045 - Pompei (NA) - Italia</li>
-        <li>80050 - Santa Maria la Carità (NA) - Italia</li>
-        <li>80057 - Sant'Antonio Abate (NA) - Italia</li>
-        <li>84018 - Scafati (SA) - Italia</li>
-    </ul>
-        <p>Stiamo lavorando per estendere il servizio quanto prima.</p>
-        <a href="https://waterlessitalia.prenotime.it/prenota"> PRENOTA ORA</a>
-    </div>    </div>
-
-</div>
-    <!-- Frecce per scorrere le slide -->
-    <button class="carousel-arrow carousel-arrow-left">&lt;</button>
-    <button class="carousel-arrow carousel-arrow-right">&gt;</button>
-</div>
-
-
-
-<div class="image-selector">
-    <!-- Frecce per scorrere le slide -->
-    <button class="carousel-arrow1 carousel-arrow1-left-mobile">&lt;</button>
-    
-    <div class="slider-track">
-        <!-- Ogni bottone rappresenta un pallino del selettore -->
-        <button class="selector-button" data-slide="0"></button>
-        <button class="selector-button" data-slide="1"></button>
-        <button class="selector-button" data-slide="2"></button>
-        <!-- Sbarretta sotto il pallino selezionato -->
-        <div class="slider-indicator"></div>
-    </div>
-
-    <button class="carousel-arrow1 carousel-arrow1-right-mobile">&gt;</button>
-</div>
+</footer>
 </body>
 </html>
+
+
 
 
 
