@@ -28,7 +28,7 @@
   margin-bottom: 0.5rem;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #015486;
 }
 
 .btn {
@@ -53,14 +53,16 @@ a {
 }
 
 body {
+  background-image: url('images/fondo\ con\ colori\ pantone_page-0007.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Poppins", sans-serif;
 }
 
 
 
 header {
-  background-image: 
-    url("images/Principale.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +110,7 @@ header {
 }
 .menu-item {
   text-decoration: none;
-  color: white;
+  color: #015486;
   margin-right: 30px;
   cursor: pointer;
   transition: color 0.3s; /* Effetto di transizione al passaggio del mouse */
@@ -141,7 +143,7 @@ header {
 .nav__logo {
   font-size: 3rem;
   font-weight: 600;
-  color: var(--white);
+  color: #015486;
   display: flex;
   align-items: center;
   gap: 10px;

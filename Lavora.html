@@ -4,103 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waterless Let's Save It!</title>
-    <link rel="stylesheet" href="rstyles.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
     rel="stylesheet"
   />
-    <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
     <script src="script.js" defer></script> <!-- Script per la gestione del menu -->
 </head>
 <body>
-<!-- Contenitore principale del sito -->
-<div class="container">
-  <!-- Intestazione con logo, icona hamburger e menu desktop -->
-  <div class="header">
-      <a href="index.html">
-          <img src="images/Logo.png" alt="Logo">
-          <span class="logo-text">Waterless</span>
-      </a>
-      
-      <!-- Menu in alto a destra per la versione desktop -->
-      <div class="menu">
-        <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
-        <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
-        <a href="Faq.html" class="menu-item">FAQ</a>
-        <a href="Contatti.html" class="menu-item">CONTATTI</a>
-        <a href="Partner.html" class="menu-item">PARTNER</a>
-      </div>
-      
-      <!-- Pulsante del menu -->
+    <header>
+        <nav class="section__container nav__container">
+          <div class="nav__logo">
+            <img src="images/Logo.png" alt="Waterless Logo" /> Waterless</div>
+          <div class="menu">
+            <a href="https://waterlessitalia.prenotime.it/prenota" class="menu-item">PRENOTA ORA</a>
+            <a href="Lavora.html" class="menu-item">LAVORA CON NOI</a>
+            <a href="Faq.html" class="menu-item">FAQ</a>
+            <a href="Contatti.html" class="menu-item">CONTATTI</a>
+            <a href="Partner.html" class="menu-item">PARTNER</a>
+          </div>
+        </nav>
+              <!-- Pulsante del menu -->
       <button id="burger" class="open-main-nav" onclick="toggleMenu()">
-          <span class="burger"></span>
-          <span class="burger-text">Menu</span>
-      </button>
-      
-      <!-- Menu a tendina -->
-      <!-- Menu a tendina -->
-      <nav class="main-nav" id="main-nav">
-        <ul>
-          <a href="index.html">HOME</a>
-          <a href="https://waterlessitalia.prenotime.it/prenota">PRENOTA ORA</a>
-          <a href="Faq.html">FAQ</a>
-          <a href="Contatti.html">CONTATTI</a>
-          <a href="Partner.html">PARTNER</a>
-          <br><br></BR>
-          <a> SCARICA L'APP:</a>
-          <li class="menu-item app-store-button">
-            <a href="https://apps.apple.com/it/app/waterless-italia/id6449192863">
-              <img src="images/apple1.png" alt="App Store">
-            </a>
-          </li>
-          <li class="menu-item app-store-button">
-            <a href="https://play.google.com/store/apps/details?id=it.prenotime.waterlessitalia&pli=1">
-              <img src="images/play1.png" alt="Play Store">
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-</div>
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    
+    <!-- Menu a tendina -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <a href="https://waterlessitalia.prenotime.it/prenota">Prenota ora</a>
+        <a href="Lavora.html">Lavora con noi</a>
+        <a href="Faq.html">FAQ</a>
+        <a href="Contatti.html">Contatti</a>
+        <a href="Partner.html">Partner</a>
+        <br><br></BR>
+        <a> Scarica l'App:</a>
+        <li class="menu-item app-store-button">
+          <a href="https://apps.apple.com/it/app/waterless-italia/id6449192863">
+            <img src="images/apple1.png" alt="App Store">
+          </a>
+        </li>
+        <li class="menu-item app-store-button">
+          <a href="https://play.google.com/store/apps/details?id=it.prenotime.waterlessitalia&pli=1">
+            <img src="images/play1.png" alt="Play Store">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
-<div class="text-overlay">
-  <div class="space1"></div>
-  <h2>Perché diventare un Washer Waterless Italia?</h2> 
+      </header>
+      <section class="section__container why__container">
+        <div class="why__content">
+          <h2 class="section__header">Perché diventare un Washer Waterless Italia?</h2>
 
-  <p><strong><i class="ri-wallet-fill"></i> Guadagna fino a....</strong></p>
-  <p>Nessun costo o partita iva da aprire, ti offriamo un regolare contratto italiano e verrai pagato ogni mese con busta paga in base alle ore lavorate</p>
-  <br>
-  <p><strong><i class="ri-time-fill"></i> Orario di lavoro flessibile.</strong></p>
-  <p>Decidi tu quando e con che frequenza lavorare. Tutta la settimana? Serate e fine settimana? Solo mezza giornata?</p>
-  <br>
-  <p><strong><i class="ri-profile-fill"></i> Formazione professionale</strong></p>
-  <p>Verrai formato per diventare un washer professionista, imparerai ad utilizzare i prodotti al meglio per lavare perfettamente ogni veicolo</p>
-  <br>
-  <h3>Diventa un professionista della cura dell'auto!</h3>
-  <p>Waterless Italia fa la differenza grazie ad un team di professionisti specializzati e appassionati dediti alla cura della tua auto, dimostrando attenzione al dettaglio ed efficienza in ogni intervento.</p>
+          <div class="why__grid">
+            <span><i class="fas fa-money-bill-wave"></i></span>
+            <div>
+              <h4>Guadagna fino a....
+              </h4>
+              <p>
+                Nessun costo o partita iva da aprire, ti offriamo un regolare contratto italiano e verrai pagato ogni mese con busta paga in base alle ore lavorate
+              </p>
+            </div>
+            <span><i class="fas fa-clock"></i></span>
+            <div>
+              <h4>Orario di lavoro flessibile.              </h4>
+              <p>
+                Decidi tu quando e con che frequenza lavorare. Tutta la settimana? Serate e fine settimana? Solo mezza giornata? 
+              </p>
+            </div>
+            <span><i class="fas fa-chalkboard-teacher"></i></span>
+            <div>
+              <h4>Formazione professionale</h4>
+              <p>
+                Verrai formato per diventare un washer professionista, imparerai ad utilizzare i prodotti al meglio per lavare perfettamente ogni veicolo
+              </p>
+            </div>
+            <span><i class="far fa-file-alt"></i></i></span>
+            <div>
+              <h4>Diventa un professionista della cura dell'auto!
+                </h4>
+                <p>
+                  Waterless Italia fa la differenza grazie ad un team di professionisti specializzati e appassionati dediti alla cura della tua auto, dimostrando attenzione al dettaglio ed efficienza in ogni intervento.
+              </p>
+              <p style="text-align: center; font-weight: bold;">
+                  " La qualità del servizio e la soddisfazione del cliente sono imprescindibili”
+              </p>
+              <p>
+                Se sei motivato a far parte di un gruppo vincente puoi candidarti inviando una mail a <a href="mailto:info@waterlessitalia.it">info@waterlessitalia.it</a>
+              </p>
+            </div>
 
-  <p><strong>"La qualità del servizio e la soddisfazione del cliente sono imprescindibili”</strong></p>
-  <br>
-  <p><strong><i class="ri-map-pin-user-fill"></i></strong> Se sei motivato a far parte di un gruppo vincente puoi candidarti inviando una mail a <a href="mailto:info@waterlessitalia.it">info@waterlessitalia.it</a></p>
+          </div>
+        </div>
+        <div class="why__image">
+          <img src="assets/choose-us.jpg" alt="why choose us" />
+        </div>
+      </section>
 
-  <div class="space"></div>
-  <div class="space2"></div>
-</div>
-
-
-
-            <footer>
-                <!-- Contenuto del tuo footer -->
-                <div class="footer-content">
-                    <!-- Parte sinistra del footer -->
-                    <div class="left-footer">
-                        <!-- Includi qui il logo di Waterless Italia -->
-                        <img src="images/Logo.png" alt="Waterless Italia Logo">
-                        <p>&copy; Waterless Italia, Partita IVA: 09991351215</p>
-                    </div>
-                    <!-- Parte destra del footer -->
-                    <div class="right-footer">
-                        Powered by Pasquale Langellotti
-                    </div>
-                </div>
-            </footer>
+      <footer>
+        <!-- Contenuto del tuo footer -->
+        <div class="footer-content">
+            <!-- Parte sinistra del footer -->
+            <div class="left-footer">
+                <!-- Includi qui il logo di Waterless Italia -->
+                <img src="images/Logo.png" alt="Waterless Italia Logo">
+                <p>&copy; Waterless Italia, Partita IVA: 09991351215</p>
+            </div>
+            <!-- Parte destra del footer -->
+            <div class="right-footer">
+              Powered by Pasquale Langellotti
+            </div>
+        </div>
+    </footer>
+  </body>
+  </html>
