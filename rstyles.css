@@ -9,7 +9,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/Sfondo.jpg');
+    background-image:url('images/fondo\ con\ colori\ pantone_page-0010.jpg');
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: cover; /* Questo farà in modo che l'immagine copra l'intera viewport */
