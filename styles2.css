@@ -1275,3 +1275,49 @@ body.fade-out {
       opacity: 0;
   }
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1 0 auto;  /* Questo permette al contenuto di crescere e riempire lo spazio disponibile */
+}
+
+footer {
+  flex-shrink: 0;  /* Questo impedisce al footer di ridursi */
+}
+
+
+/* Nascondi le icone desktop */
+.social-icons-mobile {
+  display: none;
+}
+
+/* Stili per le icone dei social media nella versione desktop */
+.social-icons-desktop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-desktop {
+  margin: 0 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-desktop i {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.icon-desktop:hover i {
+  color: #0077b5;
+}
