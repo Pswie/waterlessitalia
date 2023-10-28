@@ -1069,3 +1069,31 @@ footer {
     width: 60px; /* o qualsiasi altra dimensione desideri */
     height: auto;
   }}
+
+  /* Transizioni in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 0.95; /* Ridotta l'opacità finale */
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Transizioni out */
+body.fade-out {
+  animation: fadeOut 1.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 0.95; /* Parti da un'opacità leggermente ridotta */
+  }
+  to {
+      opacity: 0;
+  }
+}

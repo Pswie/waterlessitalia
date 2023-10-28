@@ -101,7 +101,7 @@ header {
 .menu {
   position: relative;
   top: 0px;
-  right: -80px;
+  right: -120px;
   display: flex;
   z-index: 1000;
   margin-right: 6px;
@@ -1245,4 +1245,33 @@ footer {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #DAECEF;
+}
+
+
+/* Transizioni in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 0.95; /* Ridotta l'opacità finale */
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Transizioni out */
+body.fade-out {
+  animation: fadeOut 1.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 0.95; /* Parti da un'opacità leggermente ridotta */
+  }
+  to {
+      opacity: 0;
+  }
 }
