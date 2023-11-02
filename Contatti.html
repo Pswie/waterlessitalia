@@ -101,24 +101,257 @@
         </div>
       </section>
     </div>
-  </body>
 
-      <footer>
-        <!-- Contenuto del tuo footer -->
-        <div class="footer-content">
-            <!-- Parte sinistra del footer -->
-            <div class="left-footer">
-                <!-- Includi qui il logo di Waterless Italia -->
-                <img src="images/Logo.png" alt="Waterless Italia Logo">
-                <p>&copy; Waterless Italia, Partita IVA: 09991351215</p>
-            </div>
-            <!-- Parte destra del footer -->
-            <div class="right-footer">
-              Powered by Pasquale Langellotti
-            </div>
+
+  <footer>
+    <!-- Contenuto del tuo footer -->
+    <div class="footer-content">
+        <!-- Parte sinistra del footer -->
+        <div class="left-footer">
+            <!-- Includi qui il logo di Waterless Italia -->
+            <img src="images/Logo.png" alt="Waterless Italia Logo">
+            <p>&copy; Waterless Italia, <br> Partita IVA: 09991351215 <br>
+              <button id="termsLink" class="terms-button">Termini e Condizioni</button>
+              <button id="privacyLink" class="terms-button">Privacy policy</button></p>
+
         </div>
-    </footer>
+        <!-- Parte destra del footer -->
+        <div class="right-footer">
+            Powered by Pasquale Langellotti
+            <!-- Bottone per aprire il modal dei termini e condizioni -->
+        </div>
+    </div>
+</footer>
 
+      <!-- Modal Termini e Condizioni -->
+      <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Termini e Condizioni</h2>
+            <p>Informativa in Ordine alla Riservatezza dei Dati Resa ai sensi del G.D.P.R. 2016/679 (G.D.P.R. - General Data Protection Regulation – Regolamento UE 2016/679)</p>
+            
+            <p> Gentile Cliente, ai sensi degli art.12, 13, 14 Regolamento Privacy UE 2016/679, La informiamo che i dati personali da Lei forniti o comunque
+               acquisiti all’atto della sottoscrizione della presente saranno trattati nel rispetto della normativa vigente e dei principi di correttezza, liceità,
+                trasparenza e tutela della riservatezza da essa previsti.</p>
+            
+            <h3>1. Titolare del trattamento</h3>
+            <p>Il Titolare del trattamento è Waterless Italia, con sede in Via San Michele 14, 80045 Pompei (Napoli) - Partita Iva: 09991351215 - Indirizzo email: info@waterlessitalia.it - Telefono: 350 955 82 58
+            </p>
+            
+            <h3>2. Tipi di dati raccolti</h3>
+            <p>I dati personali che il Titolare raccoglie direttamente sono quelli presenti nel modulo Utente, in fase di registrazione.
+              I dati raccolti indirettamente provengono da servizi che l'Utente utilizza, ad esempio: indirizzo IP, tipo di browser, informazioni sul computer in uso, dati raccolti utilizzando i cookie o tecnologie similari.
+              Se non diversamente specificato, tutti i Dati richiesti da questo Sito sono obbligatori. Se l’Utente rifiuta di comunicarli, potrebbe essere impossibile per questo Sito fornire il Servizio. Nei casi in cui questo Sito indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati, senza che ciò abbia alcuna conseguenza sulla disponibilità del Servizio o sulla sua operatività.
+              Ogni uso di cookies, o di altri strumenti di monitoraggio, da parte del Sito o dei titolari di servizi di terze parti utilizzati da questo Sito, se non diversamente indicato, servirà per identificare gli utenti e ricordare le loro preferenze, al solo scopo di fornire il Servizio richiesto dall'utente, oltre alle ulteriori finalità descritte nel presente documento.
+              Gli utenti sono responsabili dei dati personali ottenuti da terze parti, pubblicati o condivisi con questo Sito e confermano di aver fornito il proprio consenso all'utilizzo degli stessi, liberando il Titolare da qualsiasi responsabilità verso terzi.
+              Gli Utenti dichiarano di essere maggiorenni secondo la legislazione loro applicabile. I minorenni possono utilizzare questo Sito solo con l'assistenza di un genitore o di un tutore. In nessun caso minori di 13 anni possono usare questo Sito.</p>
+            
+            <h3>3. Finalità del trattamento</h3>
+            <p>I Dati dell'Utente sono raccolti per consentire al Titolare di fornire il Servizio, adempiere agli obblighi di legge, tutelare i propri diritti ed interessi (o quelli di Utenti o di terze parti), individuare eventuali attività dolose o fraudolente, nonché per le seguenti finalità:
+
+              Finalità connesse e strumentali alla gestione dei rapporti con la clientela.
+              Finalità di natura amministrativa, finanziaria o contabile.
+              Finalità connesse agli obblighi previsti da leggi, regolamenti, normativa comunitaria o disposizioni impartite a autorità competenti od organi di vigilanza.
+              Finalità funzionali allo sviluppo delle attività svolte dal Titolare. Rientrano in questa categoria le seguenti attività:
+              Inviare alla clientela materiale informativo o promozionale riguardante servizi resi dal Titolare.
+              Inviare alla clientela materiale informativo o promozionale relativo a servizi di qualsiasi natura resi da terzi, con i quali la Società abbia stipulato accordi commerciali da proporre alla propria clientela.
+              Verificare il livello di soddisfazione della clientela sui servizi resi dal Titolare, anche servendosi di società di ricerche di mercato o, comunque, specializzate, che potranno inviare a campioni di clienti questionari da compilare od altro materiale atto allo scopo.
+              </p>
+            
+            <h3>4. Modalità di trattamento dei dati e conservazione</h3>
+            <p>Il trattamento dei dati personali avviene mediante strumenti manuali, informatici e telematici, con logiche strettamente correlate alle finalità sopra indicate e, comunque, in modo da garantire la sicurezza e la riservatezza dei dati stessi, nel rispetto della privacy e delle normative vigenti. Oltre al Titolare, in alcuni casi, potrebbero avere accesso ai Dati altri soggetti coinvolti nell'organizzazione di questo Sito (personale amministrativo, commerciale, marketing, legali, amministratori di sistema) ovvero soggetti esterni (come fornitori di servizi tecnici terzi, corrieri postali, hosting provider, società informatiche, agenzie di comunicazione).
+            </p>
+            
+            <h4>4.1. Base giuridica del trattamento</h4>
+            <p>Il Titolare tratta Dati Personali relativi all'Utente in caso sussista una delle seguenti condizioni:
+
+              L'Utente ha prestato il consenso per una o più finalità specifiche; Nota: in alcuni ordinamenti il Titolare può essere autorizzato a trattare Dati Personali senza che debba sussistere il consenso dell'Utente o un'altra delle basi giuridiche specificate di seguito, fino a quando l'Utente non si opponga (“opt-out”) a tale trattamento. Ciò non è tuttavia applicabile qualora il trattamento di Dati Personali sia regolato dalla legislazione europea in materia di protezione dei Dati Personali.
+              Il trattamento è necessario all'esecuzione di un contratto con l'Utente e/o all'esecuzione di misure precontrattuali.
+              Il trattamento è necessario per adempiere un obbligo legale al quale è soggetto il Titolare.
+              Il trattamento è necessario per l'esecuzione di un compito di interesse pubblico o per l'esercizio di pubblici poteri di cui è investito il Titolare.
+              Il trattamento è necessario per il perseguimento del legittimo interesse del Titolare o di terzi.
+              È comunque sempre possibile richiedere al Titolare di chiarire la concreta base giuridica di ciascun trattamento ed in particolare di specificare se il trattamento sia basato sulla legge, previsto da un contratto o necessario per concludere un contratto.
+              </p>
+            
+            <h4>4.2. Periodo di conservazione</h4>
+            <p>I Dati Personali raccolti per scopi collegati all'esecuzione di un contratto tra il Titolare e l’Utente saranno trattenuti sino a quando sia completata l’esecuzione di tale contratto.
+              I Dati Personali raccolti per finalità riconducibili all'interesse legittimo del Titolare saranno trattenuti sino al soddisfacimento di tale interesse. L'Utente può ottenere ulteriori informazioni in merito all'interesse legittimo perseguito dal Titolare nelle relative sezioni di questo documento o contattando il Titolare.
+              Quando il trattamento è basato sul consenso dell'Utente, il Titolare può conservare i Dati Personali più a lungo sino a quando detto consenso non venga revocato. Inoltre, il Titolare potrebbe essere obbligato a conservare i Dati Personali per un periodo più lungo in ottemperanza ad un obbligo di legge o per ordine di un'autorità.
+              Al termine del periodo di conservazione i Dati Personali saranno cancellati. Pertanto, allo spirare di tale termine il diritto di accesso, cancellazione, rettificazione ed il diritto alla portabilità dei Dati non potranno più essere esercitati.
+              </p>
+            
+            <h3>5. Soggetti ai quali i dati possono essere comunicati</h3>
+            <p>I Dati dell'Utente potranno essere condivisi, per le finalità di cui alla sezione 3 (Finalità del trattamento cui sono destinati i dati) con:
+
+              Soggetti che agiscono tipicamente in qualità di responsabili del trattamento ossia:
+              Persone, società o studi professionali che prestano attività di assistenza e consulenza in materia contabile, amministrativa, legale, tributaria, finanziaria e di recupero crediti relativamente alla erogazione dei Servizi.
+              Soggetti delegati a svolgere attività di manutenzione tecnica.
+              Società italiane o estere, per finalità amministrative o statistiche.
+              Soggetti, enti od autorità a cui sia obbligatorio comunicare i Dati personali in forza di disposizioni di legge o di ordini delle autorità.
+              Soggetti con i quali sia necessario interagire per l'erogazione dei Servizi.
+              Partner commerciali per loro finalità, autonome e distinte, solo nel caso in cui l'Utente abbia prestato uno specifico consenso.
+              L'utente ha la facoltà di negare il consenso per i suddetti tipi di comunicazione di dati personali e per i trattamenti correlati. Teniamo, altresì, a sottolineare che le società o i soggetti esterni che svolgono le attività sopra indicate effettuano autonomamente, in qualità di titolari ai sensi del D.Lgs. 679/2016, il trattamento dei dati personali ad essi comunicati.
+              Il conferimento dei dati personali è in parte necessario affinché possano essere soddisfatte le esigenze dell'Utente nell'ambito delle funzionalità del sito. Sulla base di quanto precede, pertanto, si precisa che il diniego del consenso alla raccolta, trattamento e comunicazione dei dati personali, essendo detti trattamenti e comunicazioni essenziali, avrà come conseguenza l'impossibilità di fornire qualsiasi Servizio.
+              Il mancato, parziale o inesatto conferimento dei dati personali facoltativi, invece, non comporterà alcuna conseguenza.
+              </p>
+
+            <h3>6. Trasferimento di Dati al di fuori della UE</h3>
+            <p>
+              Il Titolare può trasferire i Dati Personali raccolti all'interno della UE verso paesi terzi (ovvero, tutti i paesi non facenti parte della UE) solo in conformità con una specifica base giuridica. Pertanto, tali trasferimenti di Dati sono eseguiti secondo una delle basi giuridiche descritte di seguito.
+              L'Utente può richiedere informazioni al Titolare in merito alla base giuridica applicabile concretamente ad ogni singolo Servizio.
+            </p>
+
+            <h3>7. Diritti dell'Utente</h3>
+            <p>Gli Utenti possono esercitare determinati diritti con riferimento ai Dati trattati dal Titolare.
+              In particolare, l'Utente ha il diritto di:
+              
+              Revocare il consenso in ogni momento. L'Utente può revocare il consenso al trattamento dei propri Dati Personali precedentemente espresso.
+              Opporsi al trattamento dei propri Dati. L'Utente può opporsi al trattamento dei propri Dati quando esso avviene su una base giuridica diversa dal consenso.
+              Accedere ai propri Dati. L'Utente ha diritto ad ottenere informazioni sui Dati trattati dal Titolare, su determinati aspetti del trattamento ed a ricevere una copia dei Dati trattati.
+              Verificare e chiedere la rettificazione. L'Utente può verificare la correttezza dei propri Dati e richiederne l'aggiornamento o la correzione.
+              Ottenere la limitazione del trattamento. Quando ricorrono determinate condizioni, l'Utente può richiedere la limitazione del trattamento dei propri Dati. In tal caso il Titolare non tratterà i Dati per alcun altro scopo se non la loro conservazione.
+              Ottenere la cancellazione o rimozione dei propri Dati Personali. Quando ricorrono determinate condizioni, l'Utente può richiedere la cancellazione dei propri Dati da parte del Titolare.
+              Ricevere i propri Dati o farli trasferire ad altro titolare. L'Utente ha diritto di ricevere i propri Dati in formato strutturato, di uso comune e leggibile da dispositivo automatico e, ove tecnicamente fattibile, di ottenerne il trasferimento senza ostacoli ad un altro titolare. Questa disposizione è applicabile quando i Dati sono trattati con strumenti automatizzati ed il trattamento è basato sul consenso dell'Utente, su un contratto di cui l'Utente è parte o su misure contrattuali ad esso connesse.
+              Proporre reclamo. L'Utente può proporre un reclamo all'autorità di controllo della protezione dei dati personali competente o agire in sede giudiziale.
+              Quando i Dati Personali sono trattati nell'interesse pubblico, nell'esercizio di pubblici poteri di cui è investito il Titolare oppure per perseguire un interesse legittimo del Titolare, gli Utenti hanno diritto ad opporsi al trattamento per motivi connessi alla loro situazione particolare.
+              Si fa presente agli Utenti che, ove i loro Dati fossero trattati con finalità di marketing diretto, possono opporsi al trattamento senza fornire alcuna motivazione. Per scoprire se il Titolare tratti dati con finalità di marketing diretto gli Utenti possono fare riferimento alle rispettive sezioni di questo documento.
+              Per esercitare i diritti dell'Utente, gli Utenti possono indirizzare una richiesta agli estremi di contatto del Titolare indicati in questo documento. Le richieste sono depositate a titolo gratuito e evase dal Titolare nel più breve tempo possibile, in ogni caso entro un mese.
+              </p>
+
+            <h3>8. Cookie Policy</h3>
+            <p>Questo Sito fa utilizzo di Cookie e altri Identificatori.
+              Un cookie è un file di testo che un sito web invia al browser del computer dell’utente. Il browser salva l’informazione e la ritrasmette al server del sito nel momento in cui il browser accede nuovamente a quel sito web.
+              Un cookie contiene, in genere, il nome del dominio Internet (l’indirizzo IP del sito) da cui proviene il cookie, la “durata” del cookie (cioè l’indicazione del momento in cui lo stesso scade) e un codice numerico, di solito un unico numero generato casualmente.
+              Due sono i tipi di cookie usati:
+              
+              I Cookie di Sessione, ovvero cookie temporanei che rimangono nella cartella relativa ai cookie del browser dell’utente finché non termini la sessione di navigazione.
+              I Cookie Permanenti, ovvero cookie che rimangono nella cartella relativa ai cookie del browser per più tempo (dipendente dalla durata di ciascun cookie).
+              L’uso di cookie di sessione (che non vengono memorizzati in modo permanente sul computer dell’utente e vengono cancellati con la chiusura del browser) è strettamente limitato alla trasmissione di identificativi di sessione (costituiti da numeri casuali generati dal server) necessari per consentire l’esplorazione sicura ed efficiente del Sito.
+              Utilizziamo i cookie di sessione per le seguenti finalità:
+              
+              Per consentire all’utente il trasporto di informazioni attraverso le pagine del Sito ed evitare che debbano essere inserite più volte.
+              Per compilare statistiche anonime che ci permettono di comprendere come gli utenti usufruiscono del Sito e di migliorare la struttura dello stesso.
+              Utilizziamo i cookie permanenti per le seguenti finalità:
+              
+              Per archiviare informazioni, ad esempio i dati sul login, in modo da evitare che l'utente debba digitarli nuovamente ogni volta che visita il Sito.
+              </p>
+
+            <h3>9. Ulteriori informazioni sul trattamento </h3>
+            <p>I Dati Personali dell'Utente possono essere utilizzati da parte del Titolare in giudizio o nelle fasi preparatorie alla sua eventuale instaurazione per la difesa da abusi nell'utilizzo di questo Sito o dei Servizi connessi da parte dell'Utente. L'Utente dichiara di essere consapevole che il Titolare potrebbe essere obbligato a rivelare i Dati per ordine delle autorità pubbliche.
+              Per necessità legate al funzionamento ed alla manutenzione, questo Sito e gli eventuali servizi terzi da essa utilizzati potrebbero raccogliere log di sistema, ossia file che registrano le interazioni e che possono contenere anche Dati Personali, quali l'indirizzo IP Utente.
+              Ulteriori informazioni in relazione al trattamento dei Dati Personali potranno essere richieste in qualsiasi momento al Titolare del Trattamento utilizzando gli estremi di contatto.
+              Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualunque momento notificandolo agli Utenti su questa pagina e, se possibile, su questo Sito nonché, qualora tecnicamente e legalmente fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui è in possesso. Si prega dunque di consultare con frequenza questa pagina, facendo riferimento alla data di ultima modifica indicata in fondo.
+              </p>
+
+              <p>Waterless Italia</p>
+
+                <p>Ultima modifica: 01/11/2023</p>
+        </div>
+    </div>
+
+
+<!-- Modal Privacy Policy -->
+<div id="privacyModal" class="modal">
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Inserisci qui il tuo contenuto per Privacy Policy -->
+    <h2>Privacy Policy</h2>
+    <p>
+      Si invitano gli utenti ed i visitatori a leggere attentamente questo documento in quanto l’utilizzo dell’applicazione e la navigazione sui siti di seguito indicati implica l’accettazione automatica delle clausole ivi presenti.
+      
+      Il materiale e le informazioni fruibili attraverso l’applicazione “Waterless Italia” ed i siti https://waterlessitalia.it e https://www.facebook.com/WaterlessItalia/ non costituiscono una relazione professionista-cliente.
+       Waterless Italia declina ogni responsabilità per eventuali problemi o danni causati da errori o omissioni. Waterless Italia si adopera utilizzando tutte le proprie risorse
+        per garantire che le notizie presenti sull’applicazione e sui siti suddetti siano aggiornate ed esenti da errori, inesattezze ed omissioni.
+         Ciò nonostante, la natura stessa della rete e del servizio fornito, basato sulla libertà di accesso alla rete di un numero indefinito di operatori, 
+         comporta l’immissione di inserzioni e contenuti da parte degli stessi, nonché da parte di un numero indefinito di utenti, esclude la possibilità di
+          controllare tutte le fonti monitorate, di cui non si può fornire alcuna garanzia in merito all’affidabilità ed all’esattezza. Waterless Italia, pertanto,
+           declina ogni responsabilità per qualsiasi danno, diretto, indiretto, incidentale e consequenziale legato all’uso, proprio o improprio delle informazioni
+            contenute nell’ app e nei siti summenzionati. Non è possibile escludere la possibilità che l’applicazione ed i siti summenzionati possano essere utilizzati
+             da terzi soggetti non autorizzati per veicolare, sui dispositivi degli utienti e/o dei visitatori dei software dannosi. Waterless Italia declina ogni responsabilità
+              in caso di utilizzo non autorizzato della propria applicazione e dei propri siti ed invita i visitatori e gli utenti a munirsi degli strumenti adeguati a garantire
+               una trasmissione e ricezione dati sicura.
+    </p>
+
+      <h3>Servizio</h3>
+      <p>Waterless Italia, per il tramite dell’applicazione e dei siti summenzionati offre all’utente ed ai visitatori ESCLUSIVAMENTE la possibilità di scegliere e mettersi in contatto con operatori che offrono un servizio di lavaggio veicoli, anche a domicilio, mediante l’utilizzo di prodotti che consentono la pulizia degli interni e degli esterni a secco. Gli operatori che eseguono il servizio di lavaggio sono collaboratori di Waterless Italia e si assumono in proprio ogni responsabilità in relazione ad eventuali danni o violazione di norme derivanti dalla loro attività. Waterless Italia declina ogni responsabilità per possibili conseguenze dannose derivanti dalla condotta, anche omissiva degli operatori, identificati come Washers, nonchè per possibili errori omissioni o dichiarazioni mendaci che gli stessi forniscono all’atto del loro inserimento nel database che consente a Waterless Italia di fornire il proprio servizio di scelta e prenotazione.
+      </p>
+
+      <h3>Contenuti</h3>
+      <p>Non è consentito modificare, pubblicare, ritrasmettere, vendere, copiare, creare estratti, distribuire o mostrare alcuna parte del contenuto dell’applicazione e dei siti summenzionati, per contenuto si intende qualsivoglia ed ogni tipologia di informazione, qualunque essa sia: comunicazioni, software, foto, video, grafica, audio, musica, disegni, suono e in generale qualsiasi materiale e servizio reperibile, i messaggi di posta elettronica ed i commenti inviati dagli utenti. Tali contenuti si intendono di esclusiva proprietà di Waterless Italia, che provvederà a tutelarsi secondo le vigenti normative in caso di abusi. È vietato copiare o adattare i codici HTML creati per generare l’applicazione ed i siti summenzionati
+      </p>
+
+      <h3>Commenti - Feedback</h3>
+      
+      <p>Attraverso l’invio di commenti o messaggi di feedback, è fatto divieto assoluto di: <br>
+      
+      diffondere informazioni incomplete, inaccurate, false o fuorvianti;
+      assumere l’identità di terzi soggetti o rappresentare in modo non veritiero la propria relazione con persone o enti;
+      diffondere contenuti volgari, osceni, fraudolenti, illegali, diffamatori, calunniosi, minatori, abusivi;
+      effettuare intimidazioni o minacce ed in genere inviare materiale o informazioni in violazione di legge;
+      trasmettere materiale promozionale o effettuare qualsivolgia tipo di pubblicità.</p>
+
+      <h3>Credenziali di accesso</h3>
+      <p>Ogni utente o visitatore è ritenuto responsabile per ogni affermazione fatta, atti e omissioni che possano essere messi in relazione diretta con l’uso delle proprie credenziali di accesso, quali nome utente e/o password. Waterless Italia può in qualsiasi momento mettere fine alla iscrizione di un utente nel caso di violazione di qualsiasi prescrizione riportata nel presente documento o norma di legge o su richiesta delle Autorità di pubblica sicurezza e/o di vigilanza competenti.
+      </p>
+
+      <h3>Siti di terze parti</h3>
+      <p>L’applicazione ed i siti summenzionati possono contenere alcuni link a siti di terzi soggetti, per i quali Waterless Italia non opera alcun controllo sui contenuti, i prodotti o i servizi eventualmente offerti, nè sulle modalità di trattamento dei dati personali e sulla sicurezza adoperate e, pertanto , non è responsabile delle eventuali violazioni di legge poste in essere attraverso tali siti. La navigazione su siti di terzi avviene, quindi, a rischio e pericolo esclusivo dell’utente/visitatore stesso. Waterless Italia declina ogni responsabilità in merito a qualunque danno eventualmente subito da quest’ultimo durante la navigazione su tali siti. Waterless Italia non è responsabile per la mancata fruizione del servizio che dovesse dipendere da problemi di connessione alla rete Internet e per eventuali malfunzionamenti.
+      </p>
+
+     <h3>Modifiche</h3> 
+      <p>Waterless Italia si riserva il diritto di apportare in qualsiasi momento modifiche al presente documento. L’utente è tenuto a verificare il disclaimer e le note legali ogni volta che utilizza l’applicazione ed accede ai siti precedentemente indicati, in quanto tale utilizzo, successivo alle eventuali variazioni, ne comporterà l’accettazione automatica da parte dell’utente.
+      </p>
+
+      <p>Waterless Italia </p>
+</div>
+</div>
+    
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Modal Termini e Condizioni
+  var termsModal = document.getElementById("termsModal");
+  var termsBtn = document.getElementById("termsLink");
+  
+  // Modal Privacy Policy
+  var privacyModal = document.getElementById("privacyModal");
+  var privacyBtn = document.getElementById("privacyLink");
+  
+  // Ottieni gli elementi <span> che chiudono i modals
+  var closes = document.getElementsByClassName("close");
+
+  // Apri il modal Termini e Condizioni
+  termsBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      termsModal.style.display = "block";
+  });
+
+  // Apri il modal Privacy Policy
+  privacyBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      privacyModal.style.display = "block";
+  });
+
+  // Chiudi i modals quando si clicca su <span> (x)
+  for (var i = 0; i < closes.length; i++) {
+      closes[i].addEventListener("click", function() {
+          termsModal.style.display = "none";
+          privacyModal.style.display = "none";
+      });
+  }
+
+  // Chiudi i modals quando si clicca fuori
+  window.addEventListener("click", function(event) {
+      if (event.target == termsModal) {
+          termsModal.style.display = "none";
+      } else if (event.target == privacyModal) {
+          privacyModal.style.display = "none";
+      }
+  });
+});
+
+</script>
+</body>
   </html>
   
   
