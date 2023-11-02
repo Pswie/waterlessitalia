@@ -1321,3 +1321,12 @@ footer {
 .icon-desktop:hover i {
   color: #0077b5;
 }
+
+.service__card span1 img {
+  width: 78px;
+  height: 78px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
