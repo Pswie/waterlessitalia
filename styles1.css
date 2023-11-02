@@ -701,7 +701,83 @@ footer {
 }
 
 
+        /* Stile per il modal */
+        .modal {
+          display: none; /* Modal nascosto di default */
+          position: fixed; /* Rimane fisso in posizione */
+          z-index: 1; /* Posizionato sopra agli altri contenuti */
+          left: 0;
+          top: 0;
+          width: 100%; /* Larghezza piena */
+          height: 100%; /* Altezza piena */
+          overflow: auto; /* Abilita lo scroll se necessario */
+          background-color: rgba(0,0,0,0.4); /* Colore di sfondo */
+      }
 
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        margin-top: 2rem;      
+      }
+
+      /* Il bottone di chiusura (close) */
+      .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+      }
+
+      .terms-button {
+          background: none;
+          border: none;
+          padding: 0;
+          font-family: inherit;
+          font-size: inherit;
+          cursor: pointer;
+          color: #015486;
+          text-decoration: underline;
+          outline: none;
+      }
+
+
+      .modal h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50; /* Cambia il colore secondo il tuo design */
+        margin-bottom: 10px;
+    }
+    
+    .modal h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #34495e; /* Cambia il colore secondo il tuo design */
+        margin-top: 20px;
+    }
+    
+    .modal p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+        margin: 10px 0;
+    }
+    
+    .modal a {
+        color: #2980b9;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
 
 
 
@@ -1032,6 +1108,10 @@ footer {
     height: auto; /* Mantieni l'aspetto proporzionato */
     margin-right: 10px; /* Aggiungi margine a destra per separare il logo dal testo */
   }
+
+  .left-footer p, .right-footer {
+    font-size: 12px; /* o qualsiasi altra dimensione desideri */
+}
   
       .menu {
           display: none; /* Nascondi il menu nella versione mobile */
@@ -1081,7 +1161,9 @@ footer {
   .nav__logo img {
     width: 60px; /* o qualsiasi altra dimensione desideri */
     height: auto;
-  }}
+  }
+
+}
 
   /* Transizioni in */
 @keyframes fadeIn {
@@ -1110,3 +1192,5 @@ body.fade-out {
       opacity: 0;
   }
 }
+
+

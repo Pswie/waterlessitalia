@@ -128,3 +128,32 @@ document.querySelector('.carousel-arrow1-right-mobile').addEventListener('click'
     currentSlide = (currentSlide + 1) % slides.length;
     updateSlide();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Ottieni il modal
+    var modal = document.getElementById("termsModal");
+
+    // Ottieni il link per aprire il modal
+    var btn = document.getElementById("termsLink");
+
+    // Ottieni l'elemento <span> che chiude il modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Quando l'utente clicca sul link, apri il modal
+    btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
+    });
+
+    // Quando l'utente clicca su <span> (x), chiudi il modal
+    span.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // Quando l'utente clicca fuori dal modal, lo chiude
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
