@@ -1163,6 +1163,22 @@ footer {
     height: auto;
   }
 
+
+  .modal h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+
+.modal h3 {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.modal p {
+    font-size: 9px;
+}
+
 }
 
   /* Transizioni in */
