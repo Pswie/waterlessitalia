@@ -280,7 +280,7 @@ header {
   margin-bottom: 1rem;
   font-size: 2.5rem;
   color: var(--primary-color);
-  background-color: var(--primary-color-light);
+  /*background-color: var(--primary-color-light);*/
   transition: 0.3s;
 }
 
@@ -292,7 +292,6 @@ header {
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
-
 
 .service__card h4 {
   margin-bottom: 0.5rem;
@@ -1110,8 +1109,9 @@ footer {
   }
 
   .left-footer p, .right-footer {
-    font-size: 12px; /* o qualsiasi altra dimensione desideri */
+    font-size: 10px; /* o qualsiasi altra dimensione desideri */
 }
+
   
       .menu {
           display: none; /* Nascondi il menu nella versione mobile */
