@@ -801,6 +801,10 @@ footer {
       transition: all .375s;
       overflow-y: auto; 
   }
+
+  .header__container p {
+    font-size: 1.5rem;
+  }
   
   .no-scroll {
       overflow: hidden;
