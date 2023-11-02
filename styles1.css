@@ -185,6 +185,7 @@ header {
 }
 
 .header__container h1 {
+  padding-bottom:2rem ;
   margin-bottom: 1rem;
   max-width: 800px;
   font-size: 2rem;
