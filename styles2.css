@@ -100,7 +100,7 @@ header {
 /* Stili per il menu in alto a destra */
 .menu {
   position: relative;
-  top: 0px;
+  top: 10px;
   right: -120px;
   display: flex;
   z-index: 1000;
@@ -154,7 +154,7 @@ header {
 }
 
 .nav__logo img {
-    width: 90px;
+    width: 200px;
     height: auto;
 }
 
@@ -1174,11 +1174,13 @@ footer {
   }
   
   .nav__logo img {
-    width: 60px; /* o qualsiasi altra dimensione desideri */
+    width: 160px; /* o qualsiasi altra dimensione desideri */
     height: auto;
   }
 
-
+  .nav__logo img, .nav__logo span {
+    margin-left: 0px; /* Sposta sia l'immagine che il testo del logo più a sinistra */
+}
 
 
 /* FAQ */
