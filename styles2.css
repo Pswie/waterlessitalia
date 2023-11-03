@@ -757,6 +757,15 @@ footer {
         color: #34495e; /* Cambia il colore secondo il tuo design */
         margin-top: 20px;
     }
+
+
+    .modal h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #34495e; /* Cambia il colore secondo il tuo design */
+      margin-top: 20px;
+  }
+
     
     .modal p {
         font-size: 16px;
@@ -970,6 +979,11 @@ footer {
 .modal h3 {
     font-size: 13px;
     margin-top: 10px;
+}
+
+.modal h4 {
+  font-size: 11px;
+  margin-top: 10px;
 }
 
 .modal p {
