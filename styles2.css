@@ -543,7 +543,24 @@ header {
   cursor: pointer;
 }
 
+.center-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Spazio tra le icone */
+  width: 100%; /* Si estende sull'intera larghezza */
+  margin-bottom: 10px;
 
+}
+
+.center-footer i {
+  color: #015486;  /* Cambia il colore in blu */
+}
+
+.center-footer1 p {
+  margin: 0;
+  font-size: 14px;
+}
 
 
 /* Partner */
@@ -970,6 +987,8 @@ footer {
   }
 
 
+
+
   .modal h2 {
     font-size: 17px;
     margin-bottom: 10px;
@@ -1263,7 +1282,25 @@ footer {
 
 .text-overlay-desktop {
   display: none;
-}}
+}
+
+.center-footer i {
+  color: #015486;  /* Cambia il colore in blu */
+  font-size: 1.2rem;  /* Riduce la dimensione delle icone */
+  margin: 0 10px;  /* Aggiungi spazio tra le icone */
+  margin-top: 10px;
+}
+
+.center-footer {
+  gap: 5px; /* Spazio tra le icone */
+}
+
+.center-footer1 p {
+  font-size: 8px; /* o qualsiasi altra dimensione desideri */
+  margin-top: 10px;
+}
+
+}
 
 
   /* FAQ */
