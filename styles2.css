@@ -1481,4 +1481,31 @@ footer {
   transition: transform 0.3s ease;
 }
 
+@media (min-width: 1271px) and (max-width: 1500px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
 
+  .section__container {
+    max-width: none; /* oppure un valore differente */
+}
+
+/* Stili per il menu in alto a destra */
+.menu {
+position: relative;
+top: 10px;
+right: 10px;
+display: flex;
+z-index: 1000;
+margin-right: 6px;
+font-size: 25PX;
+
+}
+
+.nav__logo img, .nav__logo span {
+margin-left: 0;
+}
+}

@@ -817,6 +817,10 @@ footer {
   font-size: 25PX;
 
 }
+
+.nav__logo img, .nav__logo span {
+  margin-left: 0;
+}
   }
   
 
